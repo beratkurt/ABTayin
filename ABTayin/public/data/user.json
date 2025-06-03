@@ -1,0 +1,156 @@
+[
+  {
+    "sicil": "ab111111",
+    "sifre": "Admin2025*",
+    "ad": "Hasan",
+    "soyad": "Aslan",
+    "unvan": "Yazi İşleri Müdürü ",
+    "puan": 8691,
+    "yil": 10,
+    "il": 33,
+    "kurum": "Anamur Adliyesi",
+    "isAdmin": false,
+    "tayinIstegi": [
+      {
+        "id": 1,
+        "isim": "Anamur Adliyesi"
+      },
+      {
+        "id": 2,
+        "isim": "Karaisalı Adliyesi"
+      },
+      {
+        "id": 3,
+        "isim": "Gülnar Adliyesi"
+      }
+    ],
+    "tayinGecmisi": [
+      {
+        "tarih": "2023-06-15",
+        "eskiKurum": "Silifke Adliyesi",
+        "yeniKurum": "Anamur Adliyesi",
+        "aciklama": "Normal Tayin"
+      },
+      {
+        "tarih": "2020-08-01",
+        "eskiKurum": "Tarsus Adliyesi",
+        "yeniKurum": "Silifke Adliyesi",
+        "aciklama": "İsteğe Bağlı Tayin"
+      }
+    ]
+  },
+  {
+    "sicil": "ab222222",
+    "sifre": "Admin2025*",
+    "ad": "Bertan",
+    "soyad": "Kurt",
+    "unvan": "Zabıt Katibi ",
+    "puan": 6701,
+    "yil": 20,
+    "il": 46,
+    "kurum": "Anamur Adliyesi",
+    "isAdmin": false,
+    "tayinIstegi": [
+      {
+        "id": 1,
+        "isim": "Adana Adliyesi"
+      },
+      {
+        "id": 2,
+        "isim": "Karaisalı Adliyesi"
+      },
+      {
+        "id": 3,
+        "isim": "Ceyhan Adliyesi"
+      },
+      {
+        "id": 4,
+        "isim": "Yumurtalık Adliyesi"
+      },
+      {
+        "id": 5,
+        "isim": "Karataş Adliyesi"
+      }
+    ],
+    "tayinGecmisi": [
+      {
+        "tarih": "2021-09-15",
+        "eskiKurum": "Doğanşehir Adliyesi",
+        "yeniKurum": "Anamur Adliyesi",
+        "aciklama": "Normal Tayin"
+      },
+      {
+        "tarih": "2008-09-15",
+        "eskiKurum": "Hilvan Adliyesi",
+        "yeniKurum": "Doğanşehir Adliyesi",
+        "aciklama": "Normal Tayin"
+      },
+      {
+        "tarih": "2018-09-01",
+        "eskiKurum": "Bakırköy Adliyesi",
+        "yeniKurum": "Hilvan Adliyesi",
+        "aciklama": "Becayiş Tayini"
+      }
+    ]
+  },
+  {
+    "sicil": "ab333333",
+    "sifre": "Admin2025*",
+    "ad": "Hakan",
+    "soyad": "Çetin",
+    "unvan": " Mübaşir  ",
+    "puan": 5456,
+    "yil": 14,
+    "il": 34,
+    "kurum": "Ankara Adliyesi",
+    "isAdmin": false,
+    "tayinIstegi": [
+      {
+        "id": 1,
+        "isim": "Anamur Adliyesi"
+      },
+      {
+        "id": 2,
+        "isim": "Karaisalı Adliyesi"
+      },
+      {
+        "id": 3,
+        "isim": "Silifke Adliyesi"
+      },
+      {
+        "id": 4,
+        "isim": "Karataş Adliyesi"
+      },
+      {
+        "id": 5,
+        "isim": "Mut Adliyesi"
+      }
+    ],
+    "tayinGecmisi": [
+      {
+        "tarih": "2010-09-15",
+        "eskiKurum": "Artvin Adliyesi",
+        "yeniKurum": "Rize Adliyesi",
+        "aciklama": "Normal Tayin"
+      },
+      {
+        "tarih": "2018-09-01",
+        "eskiKurum": "Rize Adliyesi",
+        "yeniKurum": "Trabzon Adliyesi",
+        "aciklama": "İsteğe Bağlı Tayin"
+      }
+    ]
+  },
+  {
+    "sicil": "ab000000",
+    "sifre": "Admin2025*",
+    "ad": "Admin",
+    "soyad": "Kullanıcı",
+    "unvan": "Sistem Yöneticisi",
+    "puan": null,
+    "yil": 0,
+    "il": 6,
+    "kurum": "Adalet Bakanlığı",
+    "isAdmin": true
+  }
+]

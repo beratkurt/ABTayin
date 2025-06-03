@@ -1,0 +1,72 @@
+[
+  {
+    "il": "Mersin",
+    "ilceler": [
+      {
+        "ilce": "Anamur",
+        "adliyeler": ["Anamur Adliyesi"],
+        "bölgeno": 2,
+        "bagliacm": "Anamur Ağır Ceza Mahkemesi Başkanlığı"
+      },
+      {
+        "ilce": "Aydıncık",
+        "adliyeler": ["Aydıncık Adliyesi"],
+        "bölgeno": 3,
+        "bagliacm": "Anamur Ağır Ceza Mahkemesi Başkanlığı"
+      },
+      {
+        "ilce": "Silifke",
+        "adliyeler": ["Silifke Adliyesi"],
+        "bölgeno": 2,
+        "bagliacm": "Silifke Ağır Ceza Mahkemesi Başkanlığı"
+      },
+      {
+        "ilce": "Gülnar",
+        "adliyeler": ["Gülnar Adliyesi"],
+        "bölgeno": 4,
+        "bagliacm": "Silifke Ağır Ceza Mahkemesi Başkanlığı"
+      },
+      {
+        "ilce": "Mut",
+        "adliyeler": ["Mut Adliyesi"],
+        "bölgeno": 3,
+        "bagliacm": "Silifke Ağır Ceza Mahkemesi Başkanlığı"
+      }
+    ]
+  },
+  {
+    "il": "Adana",
+    "ilceler": [
+      {
+        "ilce": "Merkez",
+        "adliyeler": ["Adana Adliyesi"],
+        "bölgeno": 1,
+        "bagliacm": "Adana Ağır Ceza Mahkemesi Başkanlığı"
+      },
+      {
+        "ilce": "Karaisalı",
+        "adliyeler": ["Karaisalı Adliyesi"],
+        "bölgeno": 4,
+        "bagliacm": "Adana Ağır Ceza Mahkemesi Başkanlığı"
+      },
+      {
+        "ilce": "Karataş",
+        "adliyeler": ["Karataş Adliyesi"],
+        "bölgeno": 3,
+        "bagliacm": "Adana Ağır Ceza Mahkemesi Başkanlığı"
+      },
+      {
+        "ilce": "Ceyhan",
+        "adliyeler": ["Ceyhan Adliyesi"],
+        "bölgeno": 2,
+        "bagliacm": "Ceyhan Ağır Ceza Mahkemesi Başkanlığı"
+      },
+      {
+        "ilce": "Yumurtalık",
+        "adliyeler": ["Yumurtalık Adliyesi"],
+        "bölgeno": 3,
+        "bagliacm": "Ceyhan Ağır Ceza Mahkemesi Başkanlığı"
+      }
+    ]
+  }
+]
