@@ -43,7 +43,7 @@ function changeComponent(viewName) {
 
 async function updateUserTayinTalepleri(yeniTalepler) {
   try {
-    // API'ye gönder
+    // Backend API'ye tayin taleplerini gönder
     const response = await fetch('http://localhost:3001/api/tayin-talepleri', {
       method: 'PUT',
       headers: {
@@ -56,12 +56,17 @@ async function updateUserTayinTalepleri(yeniTalepler) {
     });
 
     if (!response.ok) {
-      throw new Error('Tayin talepleri güncellenirken bir hata oluştu');
+      throw new Error('API yanıt vermedi');
     }
 
-    // Local storage'ı güncelle
-    user.value.tayinIstegi = yeniTalepler;
-    localStorage.setItem('user', JSON.stringify(user.value));
+    // Kullanıcı verilerini güncelle
+    user.value = {
+      ...user.value,
+      tayinIstegi: yeniTalepler
+    };
+
+    // Session storage'ı güncelle
+    sessionStorage.setItem('user', JSON.stringify(user.value));
 
     alert('Tayin talepleriniz başarıyla kaydedildi!');
   } catch (error) {
