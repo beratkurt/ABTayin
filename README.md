@@ -3,7 +3,7 @@
 Bu proje, Adalet Bakanlığı AYEP projesi kapsamında tayin işlemlerini yönetmek için geliştirilmiş bir web uygulamasıdır.
 
 Kullanıcı Deneyimi: 
-Öncelikle ben; html, js, css, bootstrap gibi temel dilleri orta düzeyde biliyorum ve kullanıyorum, öncesinde php öğrenirken bıraktım ve vuejs 3 composition'a başladım, 1 yıla yakındır öğrenmeye devam ediyorum, buna yönelik çalışmalar yaptım, daha önce üzerinde çalıştığım bir projede sadece sayfalama üzerinde çalışmalar yaptım ancak detaylı olarak ilk kez bu projede kullanıyorum, bununla birlikte server kısmının tamamını, diğer kısımların bir kısmını yapay zeka kullanarak yaptım çünkü backend tarzında bir çalışmam olmadı ve  herhangi bir projede çalışmadım. Vuejs de ise daha çok frontend olarak sayfalama yapısını kullandım. Bilgim bundan ibarettir. Teşekkür ederim.  
+Öncelikle ben; html, js, css, bootstrap gibi temel dilleri orta düzeyde biliyorum ve kullanıyorum, öncesinde php öğrenirken bıraktım ve vuejs 3 composition'a başladım, 1 yıla yakındır öğrenmeye devam ediyorum, buna yönelik çalışmalar yaptım, daha önce üzerinde çalıştığım bir projede sadece sayfalama üzerinde çalışmalar yaptım ancak detaylı olarak ilk kez bu projede kullanıyorum, bununla birlikte server kısmının tamamını, diğer kısımların bir kısmını yapay zeka kullanarak yaptım çünkü backend tarzında bir çalışmam olmadı ve  herhangi bir projede çalışmadım. Vuejs de ise daha çok frontend olarak sayfalama yapısını kullandım. Bilgim bundan ibarettir. ## derlenmiş hali /dist dosyasında mevcuttur. Bu kısım giriş çıkış kayıtları çalışıyor, yine localde backend kısmı çalışıyor ancak server kısmı local dışında backend yapısı kullanmadığımdan ne şekilde kullanılacağını bilmiyorum. ##   Teşekkür ederim.  
 
 ![Site Görünümü](./site-screenshot.png)
 
@@ -70,7 +70,7 @@ Kullanıcı Deneyimi:
   - En az 1 özel karakter
 
 ## Teknik Gereksinimler
-
+- Derleme: Vite.js
 - Node.js
 - Vue.js 3
 - Modern bir web tarayıcısı (Chrome, Firefox, Safari, Edge)
@@ -94,18 +94,18 @@ npm install
 cd server
 npm start
 
-    ## server çalıştırmak için: 
+    ## localde çalışmak için: 
 cd ABTayin
 yarn dev    ## veya => npm run dev 
 
-
-
 ```
+
 
 4. Tarayıcıda açın:
 ```
 http://localhost:5173
 ```
+
 
 ## Test Kullanıcıları
 

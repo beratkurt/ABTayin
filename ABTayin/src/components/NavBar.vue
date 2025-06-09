@@ -25,7 +25,7 @@
             </div>
             <div class="row">
               <div class="col-12">
-                <!-- Home butonu -->
+                <!-- Anasayfa butonu -->
                 <router-link 
                 to="/" 
                 class="position-absolute" 

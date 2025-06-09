@@ -1,40 +1,33 @@
 <template>
-    <div>
+    <div class="container">
       <h4 class="mb-4">Tayin Talebi Formu</h4>  
       <form>
         <!-- Kullanıcı Bilgileri -->
-        <div class="mb-1 d-flex justify-content-start">
-          <div class="row">
-          <div class="col-4 fw-bold"><label class="form-label">Ad </label></div>
-          <div class="col-1 fw-bold">:</div>
-          <div class="col-5 "><input type="text" class="form-control formk" :value="user.ad" readonly /></div>
-        </div>          
+        <div class="user-info-section mb-4">
+          <div class="mb-3 row align-items-center">
+            <div class="col-3"><label class="form-label fw-bold mb-0">Ad</label></div>
+            <div class="col-1 text-center fw-bold">:</div>
+            <div class="col-8"><input type="text" class="form-control formk" :value="user.ad" readonly /></div>
+          </div>          
+          <div class="mb-3 row align-items-center">
+            <div class="col-3"><label class="form-label fw-bold mb-0">Soyad</label></div>
+            <div class="col-1 text-center fw-bold">:</div>
+            <div class="col-8"><input type="text" class="form-control formk" :value="user.soyad" readonly /></div>
+          </div>          
+          <div class="mb-3 row align-items-center">
+            <div class="col-3"><label class="form-label fw-bold mb-0">Unvan</label></div>
+            <div class="col-1 text-center fw-bold">:</div>
+            <div class="col-8"><input type="text" class="form-control formk" :value="user.unvan" readonly /></div>
+          </div>          
+          <div class="mb-3 row align-items-center">
+            <div class="col-3"><label class="form-label fw-bold mb-0">Sicil No</label></div>
+            <div class="col-1 text-center fw-bold">:</div>
+            <div class="col-8"><input type="text" class="form-control formk" :value="user.sicil" readonly /></div>
+          </div>
         </div>
-        <div class="mb-1 d-flex justify-content-start">
-          <div class="row">
-          <div class="col-4 fw-bold"><label class="form-label">Soyad </label></div>
-          <div class="col-1 fw-bold">:</div>
-          <div class="col-4 "><input type="text" class="form-control formk" :value="user.soyad" readonly /></div>
-        </div>          
-        </div>
-        <div class="mb-1 d-flex justify-content-start">
-          <div class="row">
-          <div class="col-4 fw-bold"><label class="form-label">Unvan </label></div>
-          <div class="col-1 fw-bold">:</div>
-          <div class="col-4 "><input type="text" class="form-control formk" :value="user.unvan" readonly /></div>
-        </div>          
-        </div>
-        <div class="mb-1 d-flex justify-content-start">
-          <div class="row">
-          <div class="col-4 fw-bold"><label class="form-label me-2">Sicil No</label></div>
-          <div class="col-1 fw-bold">:</div>
-          <div class="col-4 "><input type="text" class="form-control formk" :value="user.sicil" readonly /></div>
-        </div>
-        </div>
-        <br>
-        <h4>Tayin Talebi Seçimi</h4>
-        <hr>
-        <br>
+        <h4 class="mb-3">Tayin Talebi Seçimi</h4>
+        <hr class="mb-4">
+        
         <!-- İl Seçimi -->
         <div class="mb-3">
           <label class="form-label">İl Seçin</label>
@@ -121,49 +114,48 @@ function onIlChange() {
   const foundIl = groupedIlData.value.find(item => item.il === selectedIl.value);
   ilceler.value = foundIl ? foundIl.ilceler : [];
   adliyeler.value = [];
-}
+  }
 
 function onIlceChange() {
   selectedAdliye.value = '';
   const foundIlce = ilceler.value.find(item => item.ilce === selectedIlce.value);
   adliyeler.value = foundIlce ? foundIlce.adliyeler : [];
-}
+  }
 
 function adliyeEkle() {
   if (secilenAdliyeler.value.length >= 5) {
     alert("En fazla 5 adliye seçebilirsiniz!");
     return;
-  }
+    }
 
   if (!selectedAdliye.value) return;
-
   const yeniSecim = {
     il: selectedIl.value,
     ilce: selectedIlce.value,
     adliye: selectedAdliye.value
-  };
+    };
 
   secilenAdliyeler.value.push(yeniSecim);
   selectedAdliye.value = ''; // Seçimi sıfırla
-}
+  }
 
 function adliyeSil(index) {
   secilenAdliyeler.value.splice(index, 1);
-}
+  }
 
 function tayinTalepleriniKaydet() {
   if (secilenAdliyeler.value.length === 0) {
     alert("Lütfen en az bir adliye seçin!");
     return;
-  }
+    }
 
   // Seçilen adliyeleri user.json formatına dönüştür
   const formattedTalepler = secilenAdliyeler.value.map((secim, index) => ({
     id: index + 1,
     isim: `${secim.adliye}`
-  }));
+    }));
 
-  // Emit event to update user.json
+  // user.json güncelle
   emit('updateTayinTalepleri', formattedTalepler);
   
   alert("Tayin talepleriniz başarıyla kaydedildi!");
@@ -174,19 +166,31 @@ function tayinTalepleriniKaydet() {
   secilenAdliyeler.value = [];
   ilceler.value = [];
   adliyeler.value = [];
-}
+  }
 
 const emit = defineEmits(['updateTayinTalepleri']);
 </script>
 
-
-
-  <style scoped>
-  .formk{
-    height: 30px;
-    width: 200px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-  }
-  </style>
+<style scoped>
+  .formk {
+    height: 38px;
+    width: 100%;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    background-color: #f8f9fa;
+    }
+  .user-info-section {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+  .form-select {
+    height: 38px;
+    }
+  hr {
+    opacity: 0.15;
+    }
+</style>
