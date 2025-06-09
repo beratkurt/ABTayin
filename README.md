@@ -1,6 +1,9 @@
 # Adalet Bakanlığı Tayin Sistemi
 
-Bu proje, Adalet Bakanlığı personelinin tayin işlemlerini yönetmek için geliştirilmiş bir web uygulamasıdır.
+Bu proje, Adalet Bakanlığı AYEP projesi kapsamında tayin işlemlerini yönetmek için geliştirilmiş bir web uygulamasıdır.
+
+Kullanıcı Deneyimi: 
+Öncelikle ben; html, js, css, bootstrap gibi temel dilleri orta düzeyde biliyorum ve kullanıyorum, öncesinde php öğrenirken bıraktım ve vuejs 3 composition'a başladım, 1 yıla yakındır öğrenmeye devam ediyorum, buna yönelik çalışmalar yaptım, daha önce üzerinde çalıştığım bir projede sadece sayfalama üzerinde çalışmalar yaptım ancak detaylı olarak ilk kez bu projede kullanıyorum, bununla birlikte server kısmının tamamını, diğer kısımların bir kısmını yapay zeka kullanarak yaptım çünkü backend tarzında bir çalışmam olmadı ve  herhangi bir projede çalışmadım. Vuejs de ise daha çok frontend olarak sayfalama yapısını kullandım. Bilgim bundan ibarettir. Teşekkür ederim.  
 
 ![Site Görünümü](./site-screenshot.png)
 
