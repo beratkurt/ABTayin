@@ -79,7 +79,7 @@ Kullanıcı Deneyimi:
 
 1. Projeyi klonlayın:
 ```bash
-git clone [proje-url]
+git clone [https://github.com/beratkurt/ABTayin.git]
 ```
 
 2. Bağımlılıkları yükleyin:
